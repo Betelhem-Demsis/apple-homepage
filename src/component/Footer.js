@@ -1,166 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
-    />
+import React from 'react'
+import "../CSS/style.css"
+import icon from "../images/icons/16.png"
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,600i,700,700i,800,800i,900,900i&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header start -->
-    <div class="header-main">
-      <ul>
-        <li class="icon-link">
-          <a href="#" title="link"
-            ><img src="./images/icons/logo.png" alt="" />
-          </a>
-        </li>
-        <li><a href="/mac/">Mac</a></li>
-        <li><a href="#">iphone</a></li>
-        <li><a href="#">ipad</a></li>
-        <li><a href="#">watch</a></li>
-        <li><a href="#">tv</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Support</a></li>
-        <li class="icon-link search-link">
-          <a href="/search/" title="link"
-            ><img src="images/icons/search-icon.png" alt=""
-          /></a>
-        </li>
-        <li class="icon-link">
-          <a href="/cart/" title="link"
-            ><img src="images/icons/cart.png" alt=""
-          /></a>
-        </li>
-      </ul>
-    </div>
-    <!--header ends -->
-
-    <!-- macbook pro -->
-    <div class="macbook">
-      <div class="mac-title">
-        <p>16-inch model</p>
-        <h1>MacBook Pro</h1>
-        <p class="mac-p">The best for the brightest.</p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-        <div>
-          <img src="./images/home/mac-laptop.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- macbook pro ends-->
-
-    <!-- iphone-11-pro -->
-    <div class="iphone-pro">
-      <h1>iPhone 11 Pro</h1>
-      <h6>Pro cameras. Pro display. Pro performance.</h6>
-      <p>From $24.95/mo. or $599 with trade‑in.</p>
-      <div class="link-title">
-        <a href="">Learn more</a>
-        <a href="">Buy</a>
-      </div>
-    </div>
-    <!-- iphone-11-pro ends -->
-
-    <!-- iphone-11 -->
-    <div class="iphone">
-      <h1>iPhone 11</h1>
-      <h6>Just the right amount of everything.</h6>
-      <p>From $16.62/mo. or $399 with trade‑in.</p>
-      <div class="link-title">
-        <a href="">Learn more</a>
-        <a href="">Buy</a>
-      </div>
-    </div>
-    <!-- iphone-11 ends -->
-
-    <!-- 6 box--highlight -->
-    <div class="whole-wrap">
-        <!-- box 1 -->
-      <div class="contents content-1">
-        <img src="images/icons/watch-series5-logo.png" alt="" />
-        <p class="description">
-          With the new Always-On Retina display.<br />
-          You’ve never seen a watch like this.
-        </p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-      </div>
-      <!-- box 2 -->
-      <div class="contents content-2">
-        <img src="images/icons/apple-card-logo.png" alt="" />
-        <p class="description">
-          Get 3% Daily Cash on purchases from <br />
-          Apple using Apple Card.
-        </p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-      </div>
-      <!-- box 3 -->
-      <div class="content-3">
-        <div class="logo">
-            <img src="images/icons/apple-tv-logo.png" alt="" />
-        </div>
-        <div class="middle-pic">
-             <img src="./images/icons/servant-logo.png" alt="">
-        </div>
-         <div class="trailor">
-            <a  href="">Watch the trailer</a>
-        </div>
-          
-      </div>
-      <!-- box 4 -->
-      <div class="content-4">
-       <h1>AirPods Pro</h1>
-        <p class="description">
-            Magic like you’ve never heard.
-        </p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-      </div>
-      <!-- box 5 -->
-      <div class="content-5">
-        <p>16-inch model</p>
-        <h1>MacBook Pro</h1>
-        <p class="mac-p">The best for the brightest.</p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-      </div>
-    <!-- box 6 -->
-      <div class="contents content-6">
-        <img src="images/icons/new-ipad-logo.png" alt="" />
-        <p class="description">
-            Like a computer. Unlike any computer.
-        </p>
-        <div class="link-title">
-          <a href="">Learn more</a>
-          <a href="">Buy</a>
-        </div>
-      </div>
-    </div>
-    <!-- 6 box--highlight ends-->
-
-    <!-- footer -->
+function Footer() {
+  return (
     <footer>
            <p> Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24‑month installment loan with Citizens One, and iPhone activation with AT&T, Sprint, T‑Mobile, or Verizon. <a href="#"> Full terms apply</a>.</p>      
             <div class="footer-links"> 
@@ -275,10 +118,13 @@
                     </ul>
                 </div>
                 <div class="footer-country">
-                    <div class="flag-wrap"><img src="images/icons/16.png" alt=""></div> <div class="footer-country-name">United States</div> 
+                    <div class="flag-wrap"><img src={icon} alt=""/></div> <div class="footer-country-name">United States</div> 
                 </div>
             </div>
     </footer> 
-    <!-- footer ends -->
-  </body>
-</html>
+  
+
+  )
+}
+
+export default Footer
